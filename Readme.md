@@ -45,64 +45,64 @@ Main URL: localhost:xxxx/employees
 
 The answer will be something like:
 
-[
-    {
-        "id": "A22",
-        "name": "Ben Ammar",
-        "firstName": "Roua",
-        "dateCreated": "2022-08-26T20:05:56.000Z",
-        "department": "Info"
-    },
-    {
-        "id": "A23",
-        "name": "Ben Ammar",
-        "firstName": "Yosser",
-        "dateCreated": "2022-08-26T20:11:55.000Z",
-        "department": "Informatique"
-    }
-]
+				[
+				    {
+					"id": "A22",
+					"name": "Ben Ammar",
+					"firstName": "Roua",
+					"dateCreated": "2022-08-26T20:05:56.000Z",
+					"department": "Info"
+				    },
+				    {
+					"id": "A23",
+					"name": "Ben Ammar",
+					"firstName": "Yosser",
+					"dateCreated": "2022-08-26T20:11:55.000Z",
+					"department": "Informatique"
+				    }
+				]
 
 
 ==>This request will create a employee. POST method: localhost:xxxx/api/employees/create
 
 The employee information you enter on Postman should look something like:
 
-{
-    "id": "You new employee id",
-    "name": "You new employee name",
-    "firstName": "You new employee first name",
-    "department": "You new employee department"
-}
+				{
+				    "id": "You new employee id",
+				    "name": "You new employee name",
+				    "firstName": "You new employee first name",
+				    "department": "You new employee department"
+				}
 
 
 ==>This request will return all employees with specific department. GET by Department method: localhost:xxxx/api/employees?department=’Informatique’
 
 The answer will be something like:
 
-[
- {
-        "id": "A23",
-        "name": "Ben Ammar",
-        "firstName": "Yosser",
-        "dateCreated": "2022-08-26T20:11:55.000Z",
-        "department": "Informatique"
-    }
-]
+				[
+				 {
+					"id": "A23",
+					"name": "Ben Ammar",
+					"firstName": "Yosser",
+					"dateCreated": "2022-08-26T20:11:55.000Z",
+					"department": "Informatique"
+				    }
+				]
 
 ==>This request will be able to update the data of a specific employee. PUT method: localhost:xxxx/api/employee/update/:id
 
 You can change the data of a specific employee for example:
 
-{
-    "name": "Ben Ammar",
-    "firstName": "Roua",
-    "department": "Info"
-}
+				{
+				    "name": "Ben Ammar",
+				    "firstName": "Roua",
+				    "department": "Info"
+				}
 
-to:
+				to:
 
-{
-    "name": "Ben Ammar",
-    "firstName": "Roua",
-    "department": "Informatique"
-}
+				{
+				    "name": "Ben Ammar",
+				    "firstName": "Roua",
+				    "department": "Informatique"
+				}
